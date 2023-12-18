@@ -63,12 +63,12 @@ function Listing() {
                   </div>
                   <div className='pl-2'>
                      <p className='text-2xl font-normal'>{data.title}</p>
-                     <p className='font-normal'>{data.compName}-{data.industry}</p>
+                     <p className='font-normal'>{data.compName}&nbsp;-&nbsp;{data.industry}</p>
                      <p className='font-normal text-placeHolderColor'>{data.location} ({data.remoteType})</p>
                      <p className='font-normal leading-7 mt-6'>Part-Time(9.00 am-5.00pm IST)</p>
-                     <p className='font-normal leading-7'>Experience({data.minExp} - {data.maxExp})</p>
+                     <p className='font-normal leading-7'>Experience({data.minExp}&nbsp;-&nbsp;{data.maxExp}) Years</p>
                      <p className='font-normal leading-7'>INR (₹) ({data.minSal} - {data.maxSal})</p>
-                     <p className='font-normal leading-7'>{data.totalEmployee} Employee</p>
+                     <p className='font-normal leading-7'>{data.totalEmployee} Employees</p>
                      {data.applyType == "quick-apply" && <button className='w-[118px] px-4 py-2 bg-primary rounded text-white mt-6 text-lg'>Apply now</button>}
                      {data.applyType == "external-apply" && <button className=' px-4 py-2 rounded text-primary mt-6 text-lg border-2 border-primary'>External Apply</button>}
                   </div>
